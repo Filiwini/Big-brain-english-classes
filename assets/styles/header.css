@@ -22,7 +22,7 @@
   background-color: white; /* lub inny kolor tła */
   border-bottom: 2px solid black;
 }
-#items_in_header {
+.items_in_header {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -67,7 +67,7 @@
   }
   
   .items_in_header_small {
-    gap: 20px;
+    gap: 70px;
     margin-top: 5px;
     transition: all .25s linear;
     margin-bottom: 10px;

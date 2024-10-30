@@ -11,13 +11,13 @@ document.addEventListener("DOMContentLoaded", function () {
     //   console.log("Scroll w dół");
       if (smallVersion == true) {
       } else {
-        chanigeHeader("small");
+        changeHeader("small");
         smallVersion = true;
       }
     } else if (currentScrollPosition < previousScrollPosition) {
     //   console.log("Scroll w górę");
       if (smallVersion == true) {
-        chanigeHeader("big");
+        changeHeader("big");
         smallVersion = false;
       } else {
       }
@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
     previousScrollPosition = currentScrollPosition;
   });
 });
-function chanigeHeader(BigOrSmall) {
+function changeHeader(BigOrSmall) {
   let text_under_icons_els = Array.from(
     document.querySelectorAll(".text_under_icons")
   );
