@@ -2,14 +2,14 @@
 .header_logo_div {
   height: 100px;
   width: auto;
-  transition: all .25s linear;
+  transition: all 0.25s linear;
 }
 .header_logo_div {
   display: flex;
   justify-content: center;
   align-items: center;
   opacity: 90%;
-  transition: all .25s linear;
+  transition: all 0.25s linear;
 }
 .header_logo_div:hover {
   opacity: 100%;
@@ -36,7 +36,7 @@
   align-items: center;
   cursor: pointer;
   opacity: 70%;
-  transition: all .25s linear;
+  transition: all 0.25s linear;
 }
 .elements_in_header:hover {
   opacity: 100%;
@@ -46,34 +46,34 @@
   margin-top: 5px;
   font-size: 14px;
   text-align: center;
-  transition: all .25s linear;
+  transition: all 0.25s linear;
 }
 
 .icons_in_header {
   height: 50px;
   width: 50px;
-  transition: all .25s linear;
+  transition: all 0.25s linear;
 }
 
 .text_under_icons_small {
   display: none;
-  transition: all .25s linear;
+  transition: all 0.25s linear;
 }
 
 .icons_in_header_small {
-    height: 40px;
-    width: 40px;
-    transition: all .25s linear;
-  }
-  
-  .items_in_header_small {
-    gap: 70px;
-    margin-top: 5px;
-    transition: all .25s linear;
-    margin-bottom: 10px;
-  }
-  .header_logo_small{
+  height: 40px;
+  width: 40px;
+  transition: all 0.25s linear;
+}
+
+.items_in_header_small {
+  gap: 70px;
+  margin-top: 5px;
+  transition: all 0.25s linear;
+  margin-bottom: 10px;
+}
+.header_logo_small {
   height: 40px;
   width: auto;
-  transition: all .25s linear;
+  transition: all 0.25s linear;
 }
