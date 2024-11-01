@@ -91,7 +91,10 @@ document.addEventListener("DOMContentLoaded", function () {
     console.log(event);
     idListLabel = ["logo", "kontakt", "o_nas", "galeria", "aktualności"];
 
-    if (event.target.parentElement.id.includes(idListLabel[0])) {
+    if (
+      event.target.parentElement.id.includes(idListLabel[0]) ||
+      event.target.parentElement.parentElement.id.includes(idListLabel[0])
+    ) {
       console.log("logo");
       window.location.href = "./kontakt.html";
     } else if (
@@ -111,7 +114,7 @@ document.addEventListener("DOMContentLoaded", function () {
       event.target.parentElement.parentElement.id.includes(idListLabel[3])
     ) {
       console.log("galeria");
-      //dodać link
+      window.location.href = "./galeria.html";
     } else if (
       event.target.parentElement.id.includes(idListLabel[4]) ||
       event.target.parentElement.parentElement.id.includes(idListLabel[4])
