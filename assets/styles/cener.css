@@ -60,4 +60,13 @@
   font-size: 25px;
   height: auto;
   width: 600px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+#message{
+font-style: italic;
+}
+.error{
+  background-color: red;
+
 }
