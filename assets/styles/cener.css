@@ -1,0 +1,60 @@
+.section {
+  border: 1px solid black;
+  font-size: 25px;
+  width: auto;
+  /* display: inline-block; */
+  width: 600px;
+  
+}
+.google_map_box{
+  height: 550px; 
+  width: 500px;
+  position: relative;
+}
+.google_maps {
+  border: 1px black solid;
+  height: 550px; 
+  width: 550px;
+  position: absolute;
+  left: 25px;
+/* transform: translateX(50%);  */
+}
+.cotent-holder {
+  margin-top: 110px;
+}
+
+/* .title_section{
+
+} */
+.fist_part {
+  font-weight: 600;
+  margin: 5px 0 5px 5px;
+  float: calc(50%);
+}
+.second_part {
+  font-weight: 500;
+  margin: 5px 0 5px 5px;
+}
+#title {
+  margin: 5px 0 5px 5px;
+}
+.input {
+  background-color: #f9f9f9;
+  border-width: 1px;
+  border-color: #f1f1f1;
+  border-radius: 4px;
+  border-style: solid;
+  padding: 10px 20px;
+  margin: 5px 0;
+  color: #a4a4a4 !important;
+}
+.input_sumbit {
+  background-color: #ec774b;
+  border-width: 0px;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+}
+.input_message {
+  padding: 40px 20px;
+}

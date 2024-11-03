@@ -96,13 +96,13 @@ document.addEventListener("DOMContentLoaded", function () {
       event.target.parentElement.parentElement.id.includes(idListLabel[0])
     ) {
       console.log("logo");
-      window.location.href = "./kontakt.html";
+      window.location.href = "./index.html";
     } else if (
       event.target.parentElement.id.includes(idListLabel[1]) ||
       event.target.parentElement.parentElement.id.includes(idListLabel[1])
     ) {
       console.log("kontakt");
-      //dodać link
+      window.location.href = "./kontakt.html";
     } else if (
       event.target.parentElement.id.includes(idListLabel[2]) ||
       event.target.parentElement.parentElement.id.includes(idListLabel[2])
