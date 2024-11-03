@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Document</title>
+    <!-- dla wszystkich pod stron -->
     <link rel="stylesheet" type="text/css" href="./assets/styles/zero.css" />
     <link rel="stylesheet" type="text/css" href="./assets/styles/header.css" />
     <link rel="stylesheet" type="text/css" href="./assets/styles/footer.css" />
@@ -12,8 +13,10 @@
 
     <script src="./assets/scripts/header.js" defer></script>
     <script src="./assets/scripts/footer.js" defer></script>
-    <!-- <script src="./assets/scripts/kontakt.js" defer></script> -->
+    <!-- dla tej pod stron -->
+    <script src="./assets/scripts/kontakt.js" defer></script>
   </head>
+
   <body>
     <header id="header_menu">
       <!-- Kontener nawigacyjny -->
@@ -85,7 +88,6 @@
     </header>
 
     <div id="cotent-holder" class="cotent-holder">
-      <p id="title_section">Zadzwoń przyjedz lub napisz do nas</p>
       <div class="section" id="section-1">
         <p class="fist_part">
           telefon: <span class="second_part">536 848 482</span>
@@ -103,29 +105,43 @@
             >od 7-15 do poniedziłku do piątku i 8-16 w sobote</span
           >
         </p>
-				<div class="google_map_box">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d238.62503059049055!2d20.877762560558818!3d49.57323047275713!3m2!1i1024!2i768!4f13.1!5e1!3m2!1spl!2spl!4v1730451378524!5m2!1spl!2spl"
-          width="550"
-          height="550"
-          class="google_maps"
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe></div>
+        <div class="google_map_box">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d238.62503059049055!2d20.877762560558818!3d49.57323047275713!3m2!1i1024!2i768!4f13.1!5e1!3m2!1spl!2spl!4v1730451378524!5m2!1spl!2spl"
+            width="550"
+            height="550"
+            class="google_maps"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
       </div>
-
       <div class="section" id="section-2">
         <p id="title">SKONTAKTUJ SIĘ Z NAMI</p>
-        <form action="">
-          <input type="text" value="Imie" size="40" class="input" /><br />
-          <input type="email" value="E-mail" size="40" class="input" /><br />
-          <input type="text" value="Temat" size="40" class="input" /><br />
+        <form action="" id="form">
+          <input type="text" value="Imie" size="40" class="input" input="" />
+          <br /><input
+            type="text"
+            value="Nazwisko"
+            size="40"
+            class="input"
+            input=""
+          />
+          <br />
+          <input type="email" value="E-mail" size="40" class="input" input="" />
+          <br />
+          <input type="tel" value="Telefon (opcjonalne)" size="40" class="input" input="" />
+          <br />
+          <input type="text" value="Temat" size="40" class="input" input="" />
+          <br />
           <input
             type="text"
             value="Wiadomość"
             size="40"
             class="input input_message"
-          /><br />
+            input=""
+          />
+          <br />
           <input type="submit" value="WYŚLIJ" class="input input_sumbit" />
         </form>
       </div>

@@ -1,31 +1,26 @@
-.section {
-  border: 1px solid black;
-  font-size: 25px;
-  width: auto;
-  /* display: inline-block; */
-  width: 600px;
-  
-}
-.google_map_box{
-  height: 550px; 
+.google_map_box {
+  height: 550px;
   width: 500px;
   position: relative;
 }
 .google_maps {
   border: 1px black solid;
-  height: 550px; 
+  height: 550px;
   width: 550px;
   position: absolute;
   left: 25px;
-/* transform: translateX(50%);  */
+  /* transform: translateX(50%);  */
 }
 .cotent-holder {
   margin-top: 110px;
+  display: flex;
+  gap: 20px; /* Opcjonalnie: Odstęp między sekcjami */
+  justify-content: center; /* Opcjonalnie: Centruje sekcje w kontenerze */
+  align-items: flex-start; /* Wyrównuje sekcje do góry */}
+
+#title_section {
+  font-size: 40px;
 }
-
-/* .title_section{
-
-} */
 .fist_part {
   font-weight: 600;
   margin: 5px 0 5px 5px;
@@ -34,6 +29,7 @@
 .second_part {
   font-weight: 500;
   margin: 5px 0 5px 5px;
+  font-style: italic;
 }
 #title {
   margin: 5px 0 5px 5px;
@@ -46,10 +42,10 @@
   border-style: solid;
   padding: 10px 20px;
   margin: 5px 0;
-  color: #a4a4a4 !important;
+  color: gray;
 }
 .input_sumbit {
-  background-color: #ec774b;
+  background-color: #a34cbb;
   border-width: 0px;
   color: #ffffff;
   cursor: pointer;
@@ -57,4 +53,11 @@
 }
 .input_message {
   padding: 40px 20px;
+}
+
+.section {
+  border: 1px solid black;
+  font-size: 25px;
+  height: auto;
+  width: 600px;
 }
