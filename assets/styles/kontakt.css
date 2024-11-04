@@ -1,0 +1,147 @@
+html {
+  white-space: normal;
+}
+
+.google_map_box {
+  height: 550px;
+  width: 500px;
+  position: relative;
+}
+
+.google_maps {
+  border: 3px rgb(131, 59, 156) solid;
+  height: 550px;
+  width: 550px;
+  position: absolute;
+  left: 25px;
+}
+
+.content-holder {
+  /* poprawiona nazwa klasy */
+  margin-top: 110px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+#title_section {
+  font-size: 40px;
+}
+
+.fist_part {
+  font-weight: 600;
+  margin: 5px 0 5px 10px;
+}
+
+.second_part {
+  font-weight: 500;
+  font-style: italic;
+  text-decoration: underline;
+}
+
+.images_kontakt {
+  height: 50px;
+  width: 50px;
+}
+
+#title {
+  margin: 5px 0 5px 5px;
+}
+
+.input {
+  background-color: #f9f9f9;
+  border-width: 2px;
+  border-color: rgb(131, 59, 156);
+  border-radius: 4px;
+  border-style: solid;
+  padding: 10px 20px;
+  margin: 5px 0 5px 10px;
+  color: rgb(101, 101, 101);
+}
+
+.input_sumbit {
+  background: linear-gradient(
+    305deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(36, 77, 219, 1) 10%,
+    rgba(131, 59, 156, 1) 80%
+  );
+  border-width: 0px;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+}
+
+.input_sumbit:hover {
+  background: #244ddb;
+  transition: all 0.2s linear;
+}
+
+.input_message {
+  padding: 40px 20px;
+}
+
+.section {
+  border: 1px solid black;
+  font-size: 25px;
+  height: auto;
+  width: 600px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+#message {
+  font-style: italic;
+}
+
+.error {
+  background-color: red;
+}
+
+/* Poprawione media queries dla mniejszych ekranów */
+
+@media (max-width: 1800px) {
+  .content-holder {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .section {
+    flex: 1 1 45%;
+    min-width: 300px;
+  }
+
+  .section3 {
+    flex-basis: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .content-holder {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .section {
+    width: 100%;
+    min-width: unset;
+  }
+  .google_maps {
+    position: unset;
+    margin: 0 2.5px 0 2.5px;
+    width: calc(100vw - 16px);
+  }
+}
+
+@media (max-width: 1200px) {
+  .content-holder {
+    display: block;
+  }
+  .images_kontakt {
+    height: 20px;
+    width: 20px;
+  }
+}

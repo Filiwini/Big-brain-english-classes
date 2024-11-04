@@ -1,0 +1,17 @@
+.images {
+  height: 100px;
+  width: 100px;
+}
+.image_in_title {
+  height: 200px;
+  width: 200px;
+}
+.expand_buttons {
+    display: block;
+    height: 25px;
+    width: 25px;
+    border: 2px solid black;
+  border-radius: 50%;
+
+  text-align: center;
+}

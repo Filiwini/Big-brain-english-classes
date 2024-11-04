@@ -1,199 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Document</title>
-    <!-- dla wszystkich pod stron -->
-    <link rel="stylesheet" type="text/css" href="./assets/styles/zero.css" />
-    <link rel="stylesheet" type="text/css" href="./assets/styles/header.css" />
-    <link rel="stylesheet" type="text/css" href="./assets/styles/footer.css" />
-    <link rel="stylesheet" type="text/css" href="./assets/styles/cener.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <script src="./assets/scripts/header.js" defer></script>
-    <script src="./assets/scripts/footer.js" defer></script>
-    <!-- dla tej pod stron -->
-    <script src="./assets/scripts/kontakt.js" defer></script>
-  </head>
+  <title>Document</title>
+  <!-- dla wszystkich pod stron -->
+  <link rel="stylesheet" type="text/css" href="./assets/styles/zero.css" />
+  <link rel="stylesheet" type="text/css" href="./assets/styles/header.css" />
+  <link rel="stylesheet" type="text/css" href="./assets/styles/footer.css" />
 
-  <body>
-    <header id="header_menu">
-      <!-- Kontener nawigacyjny -->
-      <nav id="items_in_header" class="items_in_header">
-        <!-- Element 0 - logo    -->
-        <div class="header_logo_div" id="logo">
-          <img
-            src="./assets/images/logo_big_version.jpg"
-            alt="Logo"
-            id="header_logo"
-            class="header_logo"
-          />
-        </div>
-        <!-- Element 1 - Kontakt -->
-        <div class="elements_in_header" id="kontakt">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 512 512"
-            class="icons_in_header"
-          >
-            <path
-              d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"
-            />
-          </svg>
-          <p class="text_under_icons">Kontakt</p>
-        </div>
-        <!-- Element 2 - o nas -->
-        <div class="elements_in_header" id="o_nas">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 512 512"
-            class="icons_in_header"
-          >
-            <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-            <path
-              d="M362.7 19.3L314.3 67.7 444.3 197.7l48.4-48.4c25-25 25-65.5 0-90.5L453.3 19.3c-25-25-65.5-25-90.5 0zm-71 71L58.6 323.5c-10.4 10.4-18 23.3-22.2 37.4L1 481.2C-1.5 489.7 .8 498.8 7 505s15.3 8.5 23.7 6.1l120.3-35.4c14.1-4.2 27-11.8 37.4-22.2L421.7 220.3 291.7 90.3z"
-            />
-          </svg>
-          <p class="text_under_icons">o nas</p>
-        </div>
-        <!-- Element 3 - Galeria -->
-        <div class="elements_in_header" id="galeria">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 512 512"
-            class="icons_in_header"
-          >
-            <path
-              d="M0 96C0 60.7 28.7 32 64 32l384 0c35.3 0 64 28.7 64 64l0 320c0 35.3-28.7 64-64 64L64 480c-35.3 0-64-28.7-64-64L0 96zM323.8 202.5c-4.5-6.6-11.9-10.5-19.8-10.5s-15.4 3.9-19.8 10.5l-87 127.6L170.7 297c-4.6-5.7-11.5-9-18.7-9s-14.2 3.3-18.7 9l-64 80c-5.8 7.2-6.9 17.1-2.9 25.4s12.4 13.6 21.6 13.6l96 0 32 0 208 0c8.9 0 17.1-4.9 21.2-12.8s3.6-17.4-1.4-24.7l-120-176zM112 192a48 48 0 1 0 0-96 48 48 0 1 0 0 96z"
-            />
-          </svg>
-          <p class="text_under_icons">Galeria</p>
-        </div>
+  <script src="./assets/scripts/header.js" defer></script>
+  <script src="./assets/scripts/footer.js" defer></script>
+  <!-- dla tej strony -->
+  <link rel="stylesheet" type="text/css" href="./assets/styles/kontakt.css" />
+  <script src="./assets/scripts/kontakt.js" defer></script>
+</head>
 
-        <!-- Element 4 - Aktualności -->
-        <div class="elements_in_header" id="aktualności">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 448 512"
-            class="icons_in_header"
-          >
-            <path
-              d="M128 0c17.7 0 32 14.3 32 32l0 32 128 0 0-32c0-17.7 14.3-32 32-32s32 14.3 32 32l0 32 48 0c26.5 0 48 21.5 48 48l0 48L0 160l0-48C0 85.5 21.5 64 48 64l48 0 0-32c0-17.7 14.3-32 32-32zM0 192l448 0 0 272c0 26.5-21.5 48-48 48L48 512c-26.5 0-48-21.5-48-48L0 192zm64 80l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0c-8.8 0-16 7.2-16 16zm128 0l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0zM64 400l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0zm112 16l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0c-8.8 0-16 7.2-16 16z"
-            />
-          </svg>
-          <p class="text_under_icons">Aktualności</p>
-        </div>
-      </nav>
-    </header>
-
-    <div id="cotent-holder" class="cotent-holder">
-      <div class="section section1">
-        <!-- Sekcja 1 - kontakt -->
-        <p class="fist_part">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="images_kontakt">
-            <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-            <path
-              d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"
-            />
-          </svg><br>
-          telefon: <br /><span class="second_part">536 848 482</span>
-        </p>
-        <p class="fist_part">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="images_kontakt">
-            <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-            <path
-              d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"
-            />
-          </svg><br>
-          e-malin:<br />
-          <span class="second_part">bigbrain.englishclasses@gmail.com</span>
-        </p>
-        <p class="fist_part">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="images_kontakt">
-            <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-            <path
-              d="M575.8 255.5c0 18-15 32.1-32 32.1l-32 0 .7 160.2c0 2.7-.2 5.4-.5 8.1l0 16.2c0 22.1-17.9 40-40 40l-16 0c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1L416 512l-24 0c-22.1 0-40-17.9-40-40l0-24 0-64c0-17.7-14.3-32-32-32l-64 0c-17.7 0-32 14.3-32 32l0 64 0 24c0 22.1-17.9 40-40 40l-24 0-31.9 0c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2l-16 0c-22.1 0-40-17.9-40-40l0-112c0-.9 0-1.9 .1-2.8l0-69.7-32 0c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"
-            />
-          </svg><br>
-          adres:<br />
-          <span class="second_part">Bogusza 150</span>
-        </p>
-        <p class="fist_part">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="images_kontakt">
-            <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-            <path
-              d="M184 48l144 0c4.4 0 8 3.6 8 8l0 40L176 96l0-40c0-4.4 3.6-8 8-8zm-56 8l0 40L64 96C28.7 96 0 124.7 0 160l0 96 192 0 128 0 192 0 0-96c0-35.3-28.7-64-64-64l-64 0 0-40c0-30.9-25.1-56-56-56L184 0c-30.9 0-56 25.1-56 56zM512 288l-192 0 0 32c0 17.7-14.3 32-32 32l-64 0c-17.7 0-32-14.3-32-32l0-32L0 288 0 416c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-128z"
-            />
-          </svg><br>
-          jesteśmy otwarci:<br />
-          <span class="second_part"
-            >od 7-15 do poniedziłku do piątku i 8-16 w sobote</span
-          >
-        </p>
+<body>
+  <header id="header_menu">
+    <!-- Kontener nawigacyjny -->
+    <nav id="items_in_header" class="items_in_header">
+      <!-- Element 0 - logo    -->
+      <div class="header_logo_div" id="logo">
+        <img
+          src="./assets/images/logo_big_version.jpg"
+          alt="Logo"
+          id="header_logo"
+          class="header_logo"
+        />
       </div>
-      <div class="section section2">
-        <!-- Sekcja 2 - mapa -->
-        <div class="google_map_box">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d238.62503059049055!2d20.877762560558818!3d49.57323047275713!3m2!1i1024!2i768!4f13.1!5e1!3m2!1spl!2spl!4v1730451378524!5m2!1spl!2spl"
-            width="550"
-            height="550"
-            class="google_maps"
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
-        </div>
+      <!-- Element 1 - Kontakt -->
+      <div class="elements_in_header" id="kontakt">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 512 512"
+          class="icons_in_header"
+        >
+          <path
+            d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"
+          />
+        </svg>
+        <p class="text_under_icons">Kontakt</p>
+      </div>
+      <!-- Element 2 - o nas -->
+      <div class="elements_in_header" id="o_nas">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 512 512"
+          class="icons_in_header"
+        >
+          <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+          <path
+            d="M362.7 19.3L314.3 67.7 444.3 197.7l48.4-48.4c25-25 25-65.5 0-90.5L453.3 19.3c-25-25-65.5-25-90.5 0zm-71 71L58.6 323.5c-10.4 10.4-18 23.3-22.2 37.4L1 481.2C-1.5 489.7 .8 498.8 7 505s15.3 8.5 23.7 6.1l120.3-35.4c14.1-4.2 27-11.8 37.4-22.2L421.7 220.3 291.7 90.3z"
+          />
+        </svg>
+        <p class="text_under_icons">o nas</p>
+      </div>
+      <!-- Element 3 - Galeria -->
+      <div class="elements_in_header" id="galeria">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 512 512"
+          class="icons_in_header"
+        >
+          <path
+            d="M0 96C0 60.7 28.7 32 64 32l384 0c35.3 0 64 28.7 64 64l0 320c0 35.3-28.7 64-64 64L64 480c-35.3 0-64-28.7-64-64L0 96zM323.8 202.5c-4.5-6.6-11.9-10.5-19.8-10.5s-15.4 3.9-19.8 10.5l-87 127.6L170.7 297c-4.6-5.7-11.5-9-18.7-9s-14.2 3.3-18.7 9l-64 80c-5.8 7.2-6.9 17.1-2.9 25.4s12.4 13.6 21.6 13.6l96 0 32 0 208 0c8.9 0 17.1-4.9 21.2-12.8s3.6-17.4-1.4-24.7l-120-176zM112 192a48 48 0 1 0 0-96 48 48 0 1 0 0 96z"
+          />
+        </svg>
+        <p class="text_under_icons">Galeria</p>
       </div>
 
-      <div class="section section3">
-        <!-- Sekcja 3 - formularz kontaktowy -->
-        <p id="title">SKONTAKTUJ SIĘ Z NAMI</p>
-        <form action="" id="form">
-          <input type="text" value="Imie" size="40" class="input" input="" />
-          <br />
-          <input
-            type="text"
-            value="Nazwisko (opcjonalne)"
-            size="40"
-            class="input"
-            input=""
+      <!-- Element 4 - Aktualności -->
+      <div class="elements_in_header" id="aktualności">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 448 512"
+          class="icons_in_header"
+        >
+          <path
+            d="M128 0c17.7 0 32 14.3 32 32l0 32 128 0 0-32c0-17.7 14.3-32 32-32s32 14.3 32 32l0 32 48 0c26.5 0 48 21.5 48 48l0 48L0 160l0-48C0 85.5 21.5 64 48 64l48 0 0-32c0-17.7 14.3-32 32-32zM0 192l448 0 0 272c0 26.5-21.5 48-48 48L48 512c-26.5 0-48-21.5-48-48L0 192zm64 80l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0c-8.8 0-16 7.2-16 16zm128 0l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0zM64 400l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0zm112 16l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0c-8.8 0-16 7.2-16 16z"
           />
-          <br />
-          <input type="email" value="E-mail" size="40" class="input" input="" />
-          <br />
-          <input
-            type="tel"
-            value="Telefon (opcjonalne)"
-            size="40"
-            class="input"
-            input=""
-          />
-          <br />
-          <input type="text" value="Temat" size="40" class="input" input="" />
-          <br />
-          <input
-            type="text"
-            value="Wiadomość"
-            size="40"
-            class="input input_message"
-            input=""
-          />
-          <br />
-          <input type="submit" value="WYŚLIJ" class="input input_sumbit" />
-          <p id="message"></p>
-        </form>
+        </svg>
+        <p class="text_under_icons">Aktualności</p>
       </div>
+    </nav>
+  </header>
+
+  <div id="content-holder" class="content-holder">
+    <!-- Sekcja 1 - kontakt -->
+    <div class="section section1">
+      <p class="fist_part">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="images_kontakt">
+          <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+          <path
+            d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z" />
+        </svg><br>
+        telefon: <br /><span class="second_part">536 848 482</span>
+      </p>
+      <p class="fist_part">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="images_kontakt">
+          <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+          <path
+            d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z" />
+        </svg><br>
+        e-malin:<br />
+        <span class="second_part" id="email_info_special_przypadek">bigbrain.englishclasses@gmail.com</span>
+      </p>
+      <p class="fist_part">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="images_kontakt">
+          <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+          <path
+            d="M575.8 255.5c0 18-15 32.1-32 32.1l-32 0 .7 160.2c0 2.7-.2 5.4-.5 8.1l0 16.2c0 22.1-17.9 40-40 40l-16 0c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1L416 512l-24 0c-22.1 0-40-17.9-40-40l0-24 0-64c0-17.7-14.3-32-32-32l-64 0c-17.7 0-32 14.3-32 32l0 64 0 24c0 22.1-17.9 40-40 40l-24 0-31.9 0c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2l-16 0c-22.1 0-40-17.9-40-40l0-112c0-.9 0-1.9 .1-2.8l0-69.7-32 0c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z" />
+        </svg><br>
+        adres:<br />
+        <span class="second_part">Bogusza 150</span>
+      </p>
+      <p class="fist_part">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="images_kontakt">
+          <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+          <path
+            d="M184 48l144 0c4.4 0 8 3.6 8 8l0 40L176 96l0-40c0-4.4 3.6-8 8-8zm-56 8l0 40L64 96C28.7 96 0 124.7 0 160l0 96 192 0 128 0 192 0 0-96c0-35.3-28.7-64-64-64l-64 0 0-40c0-30.9-25.1-56-56-56L184 0c-30.9 0-56 25.1-56 56zM512 288l-192 0 0 32c0 17.7-14.3 32-32 32l-64 0c-17.7 0-32-14.3-32-32l0-32L0 288 0 416c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-128z" />
+        </svg><br>
+        jesteśmy otwarci:<br />
+        <span class="second_part">od 7-15 do poniedziłku do piątku i 8-16 w sobote</span>
+      </p>
+
     </div>
+    <!-- Sekcja 2 - mapa -->
+    <div class="section section2">
+      <div class="google_map_box">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d238.62503059049055!2d20.877762560558818!3d49.57323047275713!3m2!1i1024!2i768!4f13.1!5e1!3m2!1spl!2spl!4v1730451378524!5m2!1spl!2spl"
+          width="550" height="550" class="google_maps" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
 
-    <footer>
-      <nav id="items_in_footer">
-        <div id="name_in_footer">Big Brain - english private classes</div>
-        <div id="copyright_in_footer">
-          © Copyright 2022 - 2024 Big Brain english private classes
-        </div>
-        <div id="web_name_in_footer">Big Brain.com</div>
-      </nav>
-    </footer>
-  </body>
+    </div>
+    <!-- Sekcja 3 - formularz kontaktowy -->
+    <div class="section section3">
+      <p id="title">SKONTAKTUJ SIĘ Z NAMI</p>
+      <form action="" id="form">
+        <input type="text" value="Imie" size="40" class="input" input="" />
+        <br />
+        <input type="text" value="Nazwisko (opcjonalne)" size="40" class="input" input="" />
+        <br />
+        <input type="email" value="E-mail" size="40" class="input" input="" />
+        <br />
+        <input type="tel" value="Telefon (opcjonalne)" size="40" class="input" input="" />
+        <br />
+        <input type="text" value="Temat" size="40" class="input" input="" />
+        <br />
+        <input type="text" value="Wiadomość" size="40" class="input input_message" input="" />
+        <br />
+        <input type="submit" value="WYŚLIJ" class="input input_sumbit" />
+        <p id="message"></p>
+      </form>
+    </div>
+  </div>
+
+  <footer id="footer">
+    <nav id="items_in_footer">
+      <div id="name_in_footer">Big Brain - english private classes</div>
+      <div id="copyright_in_footer">
+        © Copyright 2022 - 2024 Big Brain english private classes
+      </div>
+      <div id="web_name_in_footer">Big-Brain.com</div>
+    </nav>
+  </footer>
+</body>
+
 </html>

@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     element.value = ""; // Clear the input value
 
-    element.removeEventListener("focus", removeText);
+    element.removeEventListener("click", removeText);
     element.addEventListener("blur", function () {
       addText(element, oldValue); // Pass the element and old value
     });
@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
       element.value = oldValue; // Restore the old value
 
       element.removeEventListener("blur", addText);
-      element.addEventListener("focus", removeText);
+      element.addEventListener("click", removeText);
     }
   }
 
@@ -114,5 +114,12 @@ document.addEventListener("DOMContentLoaded", function () {
     const message = document.querySelector("#message");
     message.innerHTML =
       "wszystko przebiegło pomyślnie czekaj odpoweiedzi na e-mailu lub w SMS. Opiszemy najszybciej jak to możliwe <br> Big-Brain";
+  }
+  // specjalny przypaedek zawijania textu w segment 1 w emali
+  
+  if(outerWidth < 400){
+    let email = document.querySelector('#email_info_special_przypadek');
+    email.innerHTML = 'bigbrain.englishclasses<br>@gmail.com'
+    
   }
 });
