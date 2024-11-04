@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     element.value = ""; // Clear the input value
 
-    element.removeEventListener("click", removeText);
+    element.removeEventListener("focus", removeText);
     element.addEventListener("blur", function () {
       addText(element, oldValue); // Pass the element and old value
     });
@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
       element.value = oldValue; // Restore the old value
 
       element.removeEventListener("blur", addText);
-      element.addEventListener("click", removeText);
+      element.addEventListener("focus", removeText);
     }
   }
 
